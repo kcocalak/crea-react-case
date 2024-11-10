@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@200..700&display=swap');
+
+html,
+body {
+  /* font-family: 'Manrope', sans-serif;
+  height: 100vh;
+  display: flex;
+  background: var(--background); */
+  font-family: 'Alexandria', sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+  background: rgb(234, 234, 234,1);
+  scroll-behavior: smooth !important;
+  margin: 0px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Alexandria', sans-serif;
+
+}

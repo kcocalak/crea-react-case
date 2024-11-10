@@ -1,0 +1,23 @@
+:root {
+    --primary: #292e31;
+    --primary-light: #555a5c;
+    --primary-dark: #070708;
+    --primary-extra-light: #F7F7F7;
+    --text: #1A1D1F;
+    --text-neutral: #6F767E;
+    --white: #FFFFFF;
+    --black: #000000;
+    --bg-main: #EAEAEA;
+    --bg-light: #EFEFEF;
+    --bg-extra-light: #FCFCFC;
+    --bg-light-gray: #F5F6F8;
+    --bg-gray: #E6E7EC;
+    --disabled-bgcolor: #E8EBEF;
+    --disabled-color: #9CA1B2;
+    --neutral-hover: #D7D9E2;
+    --secondary: #5f7bf7;
+    --secondary-light: #d7ddfa;
+    --secondary-dark: #1B3BFF;
+    --secondary-extra-light: #F7F7F7;
+
+}

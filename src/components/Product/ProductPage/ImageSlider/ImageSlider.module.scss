@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  width: 100%;
+
+
+  .preview {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 20rem;
+
+    .arrowLeft {
+      position: absolute;
+      filter: drop-shadow(0px 0px 5px #555);
+      width: 2rem;
+      height: 2rem;
+      color: white;
+      left: 1rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .arrowRight {
+      position: absolute;
+      filter: drop-shadow(0px 0px 5px #555);
+      width: 2rem;
+      height: 2rem;
+      color: white;
+      right: 1rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .slideImage {
+      border-radius: 0.5rem;
+      width: 100%;
+      height: 100%;
+    }
+
+    .slideImageHidden {
+      border-radius: 0.5rem;
+      box-shadow: 0px 0px 7px #666;
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+  }
+  .images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 10vh;
+    overflow-y: hidden;
+
+    .selectedImage {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.5rem;
+      box-shadow: 0px 0px 7px #666;
+      width: 90%;
+      height: 90%;
+      cursor: pointer;
+      margin: 4px;
+    }
+    .image {
+      border-radius: 0.5rem;
+      width: 90%;
+      height: 90%;
+      margin: 4px;
+      cursor: pointer;
+      border: 1px solid var(--disabled-bgcolor);
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    .preview {
+      
+    }
+    .images {
+    }
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1200px) {
+ .container{
+  .preview{
+  }
+  .images {
+    width:100%;
+  
+  }
+  
+}
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 768px) {
+  .container{
+    width: 100%;
+    .preview{
+    }
+    .images {
+      width:100%;
+    
+    }
+    
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .preview {
+      
+    }
+    .images {
+    }
+    
+  }
+}
+

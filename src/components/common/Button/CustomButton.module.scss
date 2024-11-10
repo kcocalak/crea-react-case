@@ -1,0 +1,127 @@
+.button {
+    padding: 0 16px 0 16px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    gap: 12px;
+  
+    &.primary {
+      background: var(--secondary);
+      color: var(--white);
+      border-radius: 12px;
+    
+      &:hover {
+        background: var(--secondary-dark);
+      }
+      &:disabled {
+        background: var(--disabled-bgcolor);
+        color: var(--disabled-color);
+      }
+    }
+  
+    &.secondary {
+      background: var(--secondary-extra-light);
+      color: var(--secondary);
+      border-radius: 12px;
+
+      &:hover {
+        background: var(--primary-light);
+      }
+    }
+  
+    &.outline {
+      background: transparent;
+      border: 2px solid var(--secondary);
+      color: var(--secondary);
+      border-radius: 12px;
+  
+
+      &:hover {
+        // background: var(--secondary-light);
+        border: 2px solid var(--secondary-dark);
+        color: var(--secondary-dark);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px 0px;
+      }
+    }
+  
+    &.neutral {
+      background: var(--white);
+      color: var(--text);
+      border: 2px solid var(--bg-gray);
+      border-radius: 12px;
+
+  
+      &:hover {
+        border: 2px solid var(--neutral-hover);
+      }
+    }
+  
+    &.transparent {
+      border-color: transparent;
+      background: transparent;
+      padding: 0;
+      color: var(--text-neutral);
+      border-radius: 50%;
+      &:hover {
+        background: var(--bg-light-gray);
+      }
+    }
+  
+    &.error {
+      background: var(--error);
+      color: var(--white);
+      border-radius: 12px;
+    
+      &:hover {
+        background: var(--error-dark);
+      }
+    }
+  
+    &.success {
+      background: var(--success);
+      color: var(--white);
+      border-radius: 12px;
+    
+      &:hover {
+        background: var(--success-dark);
+      }
+    }
+  
+    &.iconButton {
+      padding: 0 !important;
+    }
+  
+    &.sm {
+      height: 36px;
+      &.iconButton {
+        width: 36px;
+      }
+    }
+  
+    &.md {
+      height: 40px;
+      &.iconButton {
+        width: 40px;
+      }
+    }
+  
+    &.lg {
+      height: 44px;
+      &.iconButton {
+        width: 44px;
+      }
+    }
+  
+    &.xl {
+      height: 52px;
+      &.iconButton {
+        width: 52px;
+      }
+    }
+  
+    &.loading {
+      pointer-events: none;
+      min-width: 100px !important;
+    }
+  }
+  

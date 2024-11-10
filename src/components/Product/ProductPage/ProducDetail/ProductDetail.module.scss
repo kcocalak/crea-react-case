@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 30px;
+
+    .feature{
+        display: flex;
+        flex-direction: row;
+        gap: 0.2rem;
+        align-items: center;
+        padding: 10px 30px;
+        color: var(--text);
+        background-color: var(--disabled-bgcolor);
+        border-radius: 12px;
+    }
+}
